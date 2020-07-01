@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     button.cpp \
     combo.cpp \
     check.cpp \
-    overview.cpp
+    overview.cpp \
+    answers.cpp
 
 HEADERS  += mainwindow.h \
     database.h \
@@ -29,7 +30,8 @@ HEADERS  += mainwindow.h \
     button.h \
     combo.h \
     check.h \
-    overview.h
+    overview.h \
+    answers.h
 
 FORMS    += mainwindow.ui \
     login.ui \
@@ -37,7 +39,10 @@ FORMS    += mainwindow.ui \
     button.ui \
     combo.ui \
     check.ui \
-    overview.ui
+    overview.ui \
+    answers.ui
 
 RESOURCES += \
     icons.qrc
+
+DISTFILES +=

@@ -10,6 +10,8 @@
 #include "combo.h"
 #include "check.h"
 #include "overview.h"
+#include <stdlib.h>
+#include <answers.h>
 
 namespace Ui {
 class MainWindow;
@@ -35,7 +37,7 @@ public:
 
 public slots:
     void loggedIn(QString userID);
-    void questionAnswered(QString qid);
+    void questionAnswered();
 
 private slots:
     void on_actionLog_in_triggered();
@@ -94,11 +96,20 @@ private slots:
 
     void on_actionPregled_triggered();
 
+    void on_restart_clicked();
+
+    void on_logout_clicked();
+
+    void on_exit_clicked();
+
+    void on_actionOdgovoreno_triggered();
+
 private:
     Ui::MainWindow *ui;
     QSqlDatabase* db;
     database *base;
     void programStart();
+    void setButtonColors();
     void deaktPitanja();
     void aktPitanja();
     void labelUpdate(QString userID);
@@ -109,7 +120,13 @@ private:
     void insertDate();
     void setPointsToZero();
     void setDateToNull();
-    void setButtonColors();
+    void checkAnsweredQuestions();
+    void restartAnsweredTable();
+    void logout();
+    void endSession();
+    void restartProgress();
+    void checkIfAllAreAnswered();
+    answers *answer;
 
 };
 

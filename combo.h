@@ -23,7 +23,7 @@ public:
     void setQuestion(QString qid);
 
 signals:
-    void answered(QString);
+    void answered();
 
 private slots:
     void on_pushButton_clicked();
@@ -40,6 +40,10 @@ private:
     bool finalRes;
     void pointsInsert();
     void answeredButton();
+    void writeAnswred();
+    QString* finalWriteRes;
+    QString* questionTable;
+    void questionToString();
 };
 
 #endif // COMBO_H

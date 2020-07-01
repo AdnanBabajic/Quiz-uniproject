@@ -256,9 +256,30 @@
        </spacer>
       </item>
       <item>
+       <widget class="QPushButton" name="exit">
+        <property name="text">
+         <string>Zatvori</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="restart">
+        <property name="text">
+         <string>Resetiraj</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="ending">
         <property name="text">
          <string>Zavrsi</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="logout">
+        <property name="text">
+         <string>Odjava</string>
         </property>
        </widget>
       </item>
@@ -319,6 +340,7 @@
     </property>
     <addaction name="actionLog_in"/>
     <addaction name="actionPregled"/>
+    <addaction name="actionOdgovoreno"/>
    </widget>
    <addaction name="menuMenu"/>
   </widget>
@@ -330,7 +352,9 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actionLog_in"/>
+   <addaction name="separator"/>
    <addaction name="actionPregled"/>
+   <addaction name="actionOdgovoreno"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionLog_in">
@@ -349,6 +373,15 @@
    </property>
    <property name="text">
     <string>Pregled</string>
+   </property>
+  </action>
+  <action name="actionOdgovoreno">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/unnamed.png</normaloff>:/unnamed.png</iconset>
+   </property>
+   <property name="text">
+    <string>Odgovoreno</string>
    </property>
   </action>
  </widget>

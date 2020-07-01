@@ -9,7 +9,7 @@ database::database()
 bool database::connOpen()
 {
     base = QSqlDatabase::addDatabase("QSQLITE");
-    base.setDatabaseName("C:\\Users\\User\\Documents\\AdnanBabajicOP\\kviz.db");
+    base.setDatabaseName("C://Users//User//Desktop//Stuff//AdnanBabajicOP//kviz.db");
 
     if (base.open()){return true;}
     else {return false;}

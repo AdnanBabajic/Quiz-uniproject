@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>overview.png</file>
         <file>png-transparent-computer-icons-user-login-icon-miscellaneous-monochrome-black.png</file>
+        <file>unnamed.png</file>
     </qresource>
 </RCC>
